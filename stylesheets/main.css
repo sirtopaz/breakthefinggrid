@@ -207,8 +207,6 @@ main {
   transform: rotate(360deg) ;
 }
 
-
-
 .student:nth-of-type(4n+1) .detail .name {
   color: rgba(51,239,253,1);
 }
@@ -232,6 +230,7 @@ main {
   background: rgba(0, 0, 0, 0.75);
   padding: 1vw;
   width: 60vw;
+  overflow: auto;
 }
 
 .senior-statement h4 {
