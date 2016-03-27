@@ -30,6 +30,19 @@ table {
   border-spacing: 0;
 }
 
+/*
+defaults
+*/
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+}
+
+
 /*******************************************************************************
 Theme Styles
 ******************************************************************************/
@@ -40,7 +53,11 @@ html {
 body {
   height: 100%;
   color: #373737;
-  background: #212121;
+  background: #212121 url('../images/logoSquare_1024.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   font-size: 16px;
   font-family: 'Comfortaa', cursive;
   line-height: 1.5;
@@ -48,38 +65,49 @@ body {
 }
 
 header, footer {
-  height: 5vh;
   overflow: hidden;
-  font-size: 3vh;
+}
+
+header {
+  height: 5vh;
+}
+
+footer {
+  height: 3vh;
+  font-size: 2vh;
   line-height: 1;
 }
 
 main {
-  height: 90vh;
-  overflow: auto;
+  height: 92vh;
+  overflow: hidden;
 }
 
 .students {
-  width: 96vw;
+  width: 92vh;
   margin: 0 auto;
 }
 
 .student, .logo, .detail {
   position: relative;
   display: block;
-  height: 24vw;
-  width: 24vw;
+  height: 23vh;
+  width: 23vh;
 }
 
 .student, .logo {
   float: left;
-  background: white;
 }
 
 .detail {
+  position: absolute;
+  top: 0; left:0;
+  background: rgba(255, 255, 255, .75);
   text-align: center;
   border: 1px solid #212121;
-  background: pink;
+  transition: 500ms
+  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform .5s;
+  transition: width 2s, height 2s, background-color 2s, transform .5s;
 }
 
 .detail .name {
@@ -88,12 +116,26 @@ main {
   width: 100%;
 }
 
-footer .copyright{
+.detail img {
+  width: 100%;
+}
+
+.detail:focus, .detail:hover {
+  -webkit-transform: rotate(360deg) ;
+  transform: rotate(360deg) ;
+}
+
+footer>p {
+  padding: 0 1vw;
+  margin: 0;
+}
+
+footer>p>.copyright{
   float: left;
 }
 
-footer .credit {
-  float:right
+footer>p>.credit {
+  float:right;
 }
 
 h1, h2, h3, h4, h5, h6 {
