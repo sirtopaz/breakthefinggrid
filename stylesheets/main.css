@@ -207,6 +207,11 @@ main {
   transform: rotate(360deg) ;
 }
 
+.detail:focus .name,
+.detail:hover .name {
+  text-decoration: underline;
+}
+
 .student:nth-of-type(4n+1) .detail .name {
   color: rgba(51,239,253,1);
 }
