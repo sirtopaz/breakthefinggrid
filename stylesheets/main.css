@@ -175,6 +175,7 @@ main {
   float: left;
 }
 
+
 .detail {
   position: absolute;
   top: 0; left:0;
@@ -204,6 +205,23 @@ main {
 .detail:focus, .detail:hover {
   -webkit-transform: rotate(360deg) ;
   transform: rotate(360deg) ;
+}
+
+
+
+.student:nth-of-type(4n+1) .detail .name {
+  color: rgba(51,239,253,1);
+}
+.student:nth-of-type(4n+2) .detail .name {
+  color: rgba(254,1,23,1);
+}
+
+.student:nth-of-type(4n+3) .detail .name {
+  color: rgba(237,205,0,1);
+}
+
+.student:nth-of-type(4n+4) .detail .name {
+  color: rgba(14,17,252,1);
 }
 
 .senior-statement {
