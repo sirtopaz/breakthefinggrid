@@ -224,13 +224,13 @@ main {
 
 .senior-statement {
   color: #f2f2f2;
+  overflow: auto;
 }
 
 .statement, .media {
   background: rgba(0, 0, 0, 0.75);
   padding: 1vw;
   width: 60vw;
-  overflow: auto;
 }
 
 .senior-statement h4 {
