@@ -202,7 +202,8 @@ main {
   width: 100%;
 }
 
-.detail:focus, .detail:hover {
+.student .detail:focus,
+.student .detail:hover {
   -webkit-transform: rotate(360deg) ;
   transform: rotate(360deg) ;
 }
@@ -210,6 +211,15 @@ main {
 .detail:focus .name,
 .detail:hover .name {
   text-decoration: underline;
+}
+
+.student .detail img {
+  opacity: .6;
+}
+
+.detail:focus img,
+.detail:hover img {
+  opacity: 1;
 }
 
 .student:nth-of-type(4n+1) .detail .name {
