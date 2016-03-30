@@ -6,23 +6,23 @@ $(function() {
       $(".screen").removeClass( "hidden" );
     },
     mouseenter: function() {
-      $( this ).addClass( "animated tada" ).focus();
+      $( this ).removeClass( "animated rollIn" ).addClass( "animated tada" ).focus();
     },
     mouseleave: function() {
-      $( this ).removeClass( "animated tada" ).blur();
+      $( this ).removeClass( "animated rollIn" ).removeClass( "animated tada" ).blur();
     },
     focus: function() {
-      $( this ).addClass( "animated tada" );
+      $( this ).removeClass( "animated rollIn" ).addClass( "animated tada" );
     },
     blur: function() {
-      $( this ).removeClass( "animated tada" );
+      $( this ).removeClass( "animated rollIn" ).removeClass( "animated tada" );
     }
   });
 
   $( ".screen .close").on( {
     click: function() {
       $(".screen").addClass("hidden");
-      $(".student .detail").addClass( "animated rollIn" );
+      $(".student .detail").removeClass( "animated hinge" ).addClass( "animated rollIn" );
     }
   });
 });
