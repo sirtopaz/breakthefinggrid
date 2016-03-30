@@ -2,7 +2,8 @@
 $(function() {
   $(".student .detail").on({
     click: function() {
-      $( this ).toggleClass( "active" );
+      $(".student .detail").not( this ).addClass( "animated hinge" );
+      $(".screen").removeClass( "hidden" );
     },
     mouseenter: function() {
       $( this ).addClass( "animated tada" ).focus();
@@ -15,6 +16,13 @@ $(function() {
     },
     blur: function() {
       $( this ).removeClass( "animated tada" );
+    }
+  });
+
+  $( ".screen .close").on( {
+    click: function() {
+      $(".screen").addClass("hidden");
+      $(".student .detail").addClass( "animated rollIn" );
     }
   });
 });
