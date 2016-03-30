@@ -182,9 +182,6 @@ main {
   background: rgba(255, 255, 255, .75);
   text-align: center;
   border: 1px solid #212121;
-  transition: 500ms
-  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform .5s;
-  transition: width 2s, height 2s, background-color 2s, transform .5s;
 }
 
 .detail .name {
@@ -200,12 +197,6 @@ main {
 
 .detail img {
   width: 100%;
-}
-
-.student .detail:focus,
-.student .detail:hover {
-  -webkit-transform: rotate(360deg) ;
-  transform: rotate(360deg) ;
 }
 
 .detail:focus .name,
