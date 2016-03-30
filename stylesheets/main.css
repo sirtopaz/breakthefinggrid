@@ -89,6 +89,10 @@ a:hover, a:focus {text-decoration: underline;}
   margin: -1px; padding: 0; border: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 /*******************************************************************************
 Theme Styles
 ******************************************************************************/
@@ -233,6 +237,18 @@ main {
   color: rgba(14,17,252,1);
 }
 
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .8);
+}
+
+/*
+  student page
+*/
 .senior-statement {
   color: #f2f2f2;
   overflow: auto;
