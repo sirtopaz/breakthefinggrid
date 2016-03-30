@@ -199,6 +199,10 @@ main {
   width: 100%;
 }
 
+.detail.inside img {
+  display: none;
+}
+
 .detail:focus .name,
 .detail:hover .name {
   text-decoration: underline;
