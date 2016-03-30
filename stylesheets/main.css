@@ -199,8 +199,9 @@ main {
   width: 100%;
 }
 
-.detail.inside img {
-  display: none;
+.detail:hover,
+.detail:focus {
+  z-index: 10;
 }
 
 .detail:focus .name,

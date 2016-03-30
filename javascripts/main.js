@@ -1,14 +1,14 @@
 // JS goes here
 $(function() {
-  $(".student").on({
+  $(".student .detail").on({
     click: function() {
       $( this ).toggleClass( "active" );
     },
     mouseenter: function() {
-      $( this ).addClass( "inside" );
+      $( this ).addClass( "animated tada" );
     },
     mouseleave: function() {
-      $( this ).removeClass( "inside" );
+      $( this ).removeClass( "animated tada" );
     }
   });
 });
