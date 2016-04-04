@@ -98,14 +98,14 @@ Theme Styles
 ******************************************************************************/
 html {
   height: 100%;
-  background-color: #212121;
+  background-color: #FFF;
 }
 
 body {
   height: 100%;
-  color: #373737;
+  color: #ffffff;
   font-size: 16px;
-  font-family: 'Comfortaa', cursive;
+  font-family: "futura-pt",sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -140,7 +140,7 @@ footer {
 }
 
 footer>p {
-  color: #f2f2f2;
+  color: #121212;
   padding: 0 1vw;
   margin: 0;
 }
@@ -154,7 +154,7 @@ footer>p>.credit {
 }
 
 footer a {
-  color: #F2F2F2;
+  color: #121212;
   text-decoration: underline;
 }
 
@@ -193,7 +193,7 @@ main {
   bottom: 10px;
   width: 100%;
   font-size: 4vh;
-  color: #f2f2f2;
+  color: #000;
   text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
   font-weight: 700;
   line-height: .75;
@@ -211,6 +211,7 @@ main {
 .detail:focus .name,
 .detail:hover .name {
   text-decoration: underline;
+  color: #FF0000;
 }
 
 .student .detail img {
@@ -220,21 +221,6 @@ main {
 .detail:focus img,
 .detail:hover img {
   opacity: 1;
-}
-
-.student:nth-of-type(4n+1) .detail .name {
-  color: rgba(51,239,253,1);
-}
-.student:nth-of-type(4n+2) .detail .name {
-  color: rgba(254,1,23,1);
-}
-
-.student:nth-of-type(4n+3) .detail .name {
-  color: rgba(237,205,0,1);
-}
-
-.student:nth-of-type(4n+4) .detail .name {
-  color: rgba(14,17,252,1);
 }
 
 .screen {
