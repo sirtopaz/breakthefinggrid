@@ -32,6 +32,7 @@ $(function() {
   $( ".screen .close").on( {
     click: function() {
       $(".screen").addClass("hidden");
+      $( "#senior-statement" ).html("");
       $(".student .detail.zoomOut").removeClass( "animated zoomOut" ).addClass( "animated zoomIn" );
     }
   });
