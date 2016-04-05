@@ -17,7 +17,7 @@ $(function() {
     blur: function() {
       $( this ).removeClass( "animated zoomIn" ).removeClass( "animated tada" );
     }
-  });
+  }).addClass("animated zoomIn");
 
   $( ".screen .close").on( {
     click: function() {
