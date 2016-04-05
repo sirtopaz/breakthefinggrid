@@ -110,13 +110,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-body.main {
-  background: url('../images/logoSquare_1024.png') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 header, footer {
   overflow: hidden;
@@ -136,6 +129,7 @@ header h2 {
 footer {
   height: 3vh;
   font-size: 2vh;
+  font-weight: 700;
   line-height: 1;
 }
 
@@ -160,7 +154,14 @@ footer a {
 
 main {
   height: 92vh;
-  overflow: hidden;
+}
+
+body.main main{
+  background: url('../images/logoSquare_1024.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .students {
@@ -179,24 +180,22 @@ main {
   float: left;
 }
 
-
 .detail {
   position: absolute;
-  top: 0; left:0;
-  background: rgba(255, 255, 255, .75);
-  text-align: center;
+  top: 0;
+  left:0;
+  background: rgba(255, 255, 255, .8);
   border: 1px solid #212121;
 }
 
 .detail .name {
   position: absolute;
-  bottom: 10px;
+  bottom: 7px;
   width: 100%;
   font-size: 4vh;
   color: #000;
-  text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
   font-weight: 700;
-  line-height: .75;
+  line-height: .8;
 }
 
 .detail img {
@@ -210,8 +209,8 @@ main {
 
 .detail:focus .name,
 .detail:hover .name {
-  text-decoration: underline;
-  color: #FF0000;
+  color: #F00;
+  text-shadow: 0 0 2px rgba(0,0,0, .8);
 }
 
 .student .detail img {
@@ -221,6 +220,10 @@ main {
 .detail:focus img,
 .detail:hover img {
   opacity: 1;
+}
+
+.logo .detail {
+  background: rgba(255, 255, 255, 1);
 }
 
 .screen {
