@@ -22,7 +22,7 @@ $(function() {
   $( ".screen .close").on( {
     click: function() {
       $(".screen").addClass("hidden");
-      $(".student .detail").removeClass( "animated zoomOut" ).addClass( "animated zoomIn" );
+      $(".student .detail.zoomOut").removeClass( "animated zoomOut" ).addClass( "animated zoomIn" );
     }
   });
 });
