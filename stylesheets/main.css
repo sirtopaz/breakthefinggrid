@@ -152,11 +152,8 @@ footer a {
   text-decoration: underline;
 }
 
-main {
+main.main {
   height: 92vh;
-}
-
-body.main main{
   background: url('../images/logoSquare_1024.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
