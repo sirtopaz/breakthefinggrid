@@ -246,9 +246,13 @@ main.main {
 }
 
 #senior-statement {
+  position: absolute;
+  top: 0;
+  left: 5%;
   background: #000;
   width: 80%;
-  margin: 0 auto;
+  height: 100vh;
+  overflow: auto;
 }
 
 /*
@@ -256,7 +260,6 @@ main.main {
 */
 .senior-statement {
   color: #f2f2f2;
-  overflow: auto;
 }
 
 .statement, .media{
