@@ -6,7 +6,7 @@ $(function() {
       $(".student .detail").not( this ).addClass( "animated zoomOut" );
 
       var url = $(this).attr("href");
-      $( "#senior-statement" ).load( url + " .senior-statement", function() {
+      $( "#senior-statement" ).load( url + " .senior-statement *", function() {
         $(".screen").removeClass( "hidden" );
       } )
     },
