@@ -164,6 +164,10 @@ main.main {
 .students {
   width: 92vh;
   margin: 0 auto;
+  transition: padding 2s;
+}
+.intro .students {
+  padding: 95vh 0 0;
 }
 
 .student, .logo, .detail {
@@ -222,6 +226,13 @@ main.main {
 
 .logo .detail {
   background: rgba(255, 255, 255, 1);
+}
+
+.red .detail {
+  background: rgba(255, 0 , 0, .8);
+}
+.black .detail {
+  background: rgba(0,0,0,.8);
 }
 
 .screen {
