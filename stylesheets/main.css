@@ -250,7 +250,7 @@ main.main {
   top: 0;
   left: 5%;
   background: #000;
-  width: 80%;
+  width: 90%;
   height: 100vh;
   overflow: auto;
 }
@@ -260,6 +260,15 @@ main.main {
 */
 .senior-statement {
   color: #f2f2f2;
+}
+
+.senior-statement h3 {
+  font-size: 10vh;
+  padding: 0;
+  color: #ff0000;
+  height: 38px;
+  position: relative;
+  z-index: 1000;
 }
 
 .statement, .media{
