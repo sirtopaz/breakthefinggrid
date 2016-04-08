@@ -324,3 +324,20 @@ main.main {
   width: 50px;
   left: calc(50% - 25px);
 }
+
+.projects {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.project {
+  -webkit-flex: 1;
+  flex: 1;
+  background: #fff;
+  padding: 2px;
+}
+
+.project img {
+  width: 100%
+
+}
