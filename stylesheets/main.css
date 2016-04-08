@@ -245,6 +245,12 @@ main.main {
   z-index: 100;
 }
 
+#senior-statement {
+  background: #000;
+  width: 80%;
+  margin: 0 auto;
+}
+
 /*
   student page
 */
