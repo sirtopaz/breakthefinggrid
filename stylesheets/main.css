@@ -328,12 +328,13 @@ main.main {
 .projects {
   display: -webkit-flex;
   display: flex;
+  background: #000;
 }
 
 .project {
   -webkit-flex: 1;
   flex: 1;
-  background: #fff;
+  background: #000;
   padding: 2px;
 }
 
